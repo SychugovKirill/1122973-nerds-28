@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Нердс</title>
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="wrap wrap-header">
+      <a class="site-header__logo" href="index.html">
+        <img src="../1122973-nerds-28/img/nerds-logo.svg" alt="Логотип">
+      </a>
+
+      <nav class="site-header__nav site-nav">
+        <ul class="site-nav__list">
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="#">Студия</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="#">Клиенты</a>
+          </li>
+          <li class="site-nav__item site-nav__item--active">
+            <a class="site-nav__link" href="catalog.html">Магазин</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="#">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+
+      <a class="site-nav__cart" href="#">
+        <span>Корзина</span>
+      </a>
+    </div>
+  </header>
+
+  <main class="site-main">
+    <div class="page page__gray">
+      <div class="wrap">
+        <h1 class="site-main__title">Магазин готовых шаблонов</h1>
+      </div>
+    </div>
+
+    <div class="page">
+      <div class="wrap wrap-catalog">
+        <section class="filters">
+          <h2 class="visually-hidden">Фильтры товара</h2>
+          <!-- Здесь будет форма -->
+        </section>
+
+        <section class="catalog">
+          <h2 class="visually-hidden">Каталог шаблонов</h2>
+
+          <div class="catalog-filter">
+            <p class="catalog-filter__text">Сортировать:</p>
+            <ul class="catalog-filter__list">
+              <li class="catalog-filter__item"> <a class="catalog__link catalog__link--active" href="">По цене</a> </li>
+              <li class="catalog-filter__item"> <a class="catalog__link" href="#">По типу</a> </li>
+              <li class="catalog-filter__item"> <a class="catalog__link" href="#">По названию</a> </li>
+            </ul>
+            <a class="catalog-filter__button up" href="#"><span class="visually-hidden">Вверх</span> </a>
+            <a class="catalog-filter__button down" href="#"><span class="visually-hidden">Вниз</span> </a>
+          </div>
+
+          <ul class="catalog__list price-list">
+            <li class="catalog__item">
+              <a class="catalog__link img-link" href="#">
+                <img src="img/img-sedona.jpg" alt="Седона">
+              </a>
+              <div class="catalog__info info-catalog">
+                <a href="#" class="info-catalog__link-subtitle">
+                  <h3 class="info-catalog__subtitle">Sedona</h3>
+                </a>
+                <p class="info-catalog__text">Информационный сайт для туристов</p>
+                <a class="info-catalog__link button" href="#">9 900 руб.</a>
+              </div>
+            </li>
+            <li class="catalog__item">
+              <a class="catalog__link img-link" href="#">
+                <img src="img/img-pink.jpg" alt="Пинк">
+              </a>
+              <div class="catalog__info info-catalog">
+                <a href="#" class="info-catalog__link-subtitle">
+                  <h3 class="info-catalog__subtitle">pink app</h3>
+                </a>
+                <p class="info-catalog__text">Продуктовый лендинг приложения для iOS и Android</p>
+                <a class="info-catalog__link button" href="#">9 900 руб.</a>
+              </div>
+            </li>
+            <li class="catalog__item">
+              <a class="catalog__link img-link" href="#">
+                <img src="img/img-barbershop.jpg" alt="Барбершоп Бородинский">
+              </a>
+              <div class="catalog__info info-catalog">
+                <a href="#" class="info-catalog__link-subtitle">
+                  <h3 class="info-catalog__subtitle">Barbershop</h3>
+                </a>
+                <p class="info-catalog__text">Сайт салона красоты. Для мужчин, да.</p>
+                <a class="info-catalog__link button" href="#">9 900 руб.</a>
+              </div>
+            </li>
+            <li class="catalog__item">
+              <a class="catalog__link img-link" href="#">
+                <img src="img/img-mishka.jpg" alt="Мишка">
+              </a>
+              <div class="catalog__info info-catalog">
+                <a href="#" class="info-catalog__link-subtitle">
+                  <h3 class="info-catalog__subtitle">Mishka</h3>
+                </a>
+                <p class="info-catalog__text">Интернет-магазин вязаных игрушек</p>
+                <a class="info-catalog__link button" href="#">9 900 руб.</a>
+              </div>
+            </li>
+            <li class="catalog__item">
+              <a class="catalog__link img-link" href="#">
+                <img src="img/img-aplus.jpg" alt="А плюс">
+              </a>
+              <div class="catalog__info info-catalog">
+                <a href="#" class="info-catalog__link-subtitle">
+                  <h3 class="info-catalog__subtitle">a plus</h3>
+                </a>
+                <p class="info-catalog__text">Лендинг курсов повышения квалификации</p>
+                <a class="info-catalog__link button" href="#">9 900 руб.</a>
+              </div>
+            </li>
+            <li class="catalog__item">
+              <a class="catalog__link img-link" href="#">
+                <img src="img/img-kvast.jpg" alt="Кваст">
+              </a>
+              <div class="catalog__info info-catalog">
+                <a href="#" class="info-catalog__link-subtitle">
+                  <h3 class="info-catalog__subtitle">Кваст</h3>
+                </a>
+                <p class="info-catalog__text">Промо-сайт производителя крафтового кваса</p>
+                <a class="info-catalog__link button" href="#">9 900 руб.</a>
+              </div>
+            </li>
+          </ul>
+
+          <ul class="catalog__list pagination-catalog">
+            <li class="pagination-catalog__item">
+              <a class="pagination-catalog__link pagination-catalog__link--active button" href="">1</a>
+            </li>
+            <li class="pagination-catalog__item">
+              <a class="pagination-catalog__link button" href="#">2</a>
+            </li>
+            <li class="pagination-catalog__item">
+              <a class="pagination-catalog__link button" href="#">3</a>
+            </li>
+            <li class="pagination-catalog__item">
+              <a class="pagination-catalog__link button button-next" href="#">Следующая</a>
+            </li>
+          </ul>
+        </section>
+      </div>
+    </div>
+
+    <section class="map">
+      <img class="map__img" src="img/map.jpg" alt="Адрес студии Нердс">
+      <div class="wrap">
+        <div class="contacts">
+          <p class="contacts__name">nёrds design studio</p>
+          <p class="contacts__text">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+          <a class="contacts__tel" href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
+          <a href="writeus.html" class="contacts__link button">Напишите нам</a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <div class="wrap wrap-footer">
+        <ul class="site-footer__list socials-list">
+          <li class="socials-list__item">
+            <a class="socials-list__link button" href="#">
+              <span class="visually-hidden">В контакте</span>
+            </a>
+          </li>
+          <li class="socials-list__item">
+            <a class="socials-list__link button" href="#">
+              <span class="visually-hidden">Фейсбук</span>
+            </a>
+          </li>
+          <li class="socials-list__item">
+            <a class="socials-list__link button" href="#">
+              <span class="visually-hidden">Инстаграм</span>
+            </a>
+          </li>
+        </ul>
+        <div class="site-footer__content content-footer">
+          <p class="content-footer__text">Давайте дружить, это выгодно!</p>
+          <p class="content-footer__text">Скидка 10% для друзей из социальных сетей.</p>
+        </div>
+      </div>
+    </footer>
+  </main>
+</body>
+
+</html>
