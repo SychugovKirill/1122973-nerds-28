@@ -45,7 +45,77 @@
 
     <div class="page">
       <div class="wrap wrap-catalog">
-        <!-- Здесь будет форма -->
+        <section class="filters">
+          <h2 class="visually-hidden">Фильтры товара</h2>
+          <form class="form-filter" action="https://echo.htmlacademy.ru/" method="GET">
+            <fieldset class="form-filter__field field">
+              <legend class="field__subtitle">Стоимость:</legend>
+              <div class="inner-field__range">
+                <input class="field__range" type="range" step="1">
+                <span class="range__button"></span>
+                <span class="range__button"></span>
+              </div>
+              <ul class="field__list">
+                <label class="field__item"> от <input type="number" name="field__price" value="0">
+                </label>
+                <label class="field__item"> до <input type="number" name="field__price" value="15000">
+                </label>
+              </ul>
+            </fieldset>
+            <fieldset class="form-filter__field field field-radio">
+              <legend class="field__subtitle subtitle-radio ">Сетка:</legend>
+              <ul class="field__list field-radio__list">
+                <li class="field-radio__item">
+                  <input class="field-radio__button field__button visually-hidden" type="radio" id="filter-adaptive"
+                    name="site-grid" value="adaptive" checked>
+                  <label class="field__label" for="filter-adaptive">Адаптивная</label>
+                </li>
+                <li class="field-radio__item">
+                  <input class="field-radio__button field__button visually-hidden" type="radio" id="filter-fixed"
+                    name="site-grid" value="fixed">
+                  <label class="field__label" for="filter-fixed">Фиксированная</label>
+                </li>
+                <li class="field-radio__item">
+                  <input class="field-radio__button field__button visually-hidden" type="radio" id="filter-rubber"
+                    name="site-grid" value="rubber">
+                  <label class="field__label" for="filter-rubber">Резиновая</label>
+                </li>
+              </ul>
+            </fieldset>
+
+            <fieldset class="form-filter__field field field-checkbox">
+              <legend class="field__subtitle subtitle-checkbox">Особенности:</legend>
+              <ul class="field__list field-checkbox__list">
+                <li class="field-checkbox__item">
+                  <input class="field-checkbox__button field__button visually-hidden" type="checkbox" id="filter-slider"
+                    name="slider" checked>
+                  <label class="field__label" for="filter-slider">Слайдер</label>
+                </li>
+                <li class="field-checkbox__item">
+                  <input class="field-checkbox__button field__button visually-hidden" type="checkbox"
+                    id="filter-block-advantages" name="block-advantages">
+                  <label class="field__label" for="filter-block-advantages">Блок преимуществ</label>
+                </li>
+                <li class="field-checkbox__item">
+                  <input class="field-checkbox__button field__button visually-hidden" type="checkbox" id="filter-news"
+                    name="news" checked>
+                  <label class="field__label" for="filter-news">Новости</label>
+                </li>
+                <li class="field-checkbox__item">
+                  <input class="field-checkbox__button field__button visually-hidden" type="checkbox" id="filter-galary"
+                    name="galary">
+                  <label class="field__label" for="filter-galary">Галерея</label>
+                </li>
+                <li class="field-checkbox__item">
+                  <input class="field-checkbox__button field__button visually-hidden" type="checkbox" id="filter-cart"
+                    name="cart">
+                  <label class="field__label" for="filter-cart">Корзина</label>
+                </li>
+              </ul>
+            </fieldset>
+            <button class="button form-button" type="submit">Показать</button>
+          </form>
+        </section>
 
         <section class="catalog">
           <h2 class="visually-hidden">Каталог шаблонов</h2>
