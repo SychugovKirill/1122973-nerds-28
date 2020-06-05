@@ -1,0 +1,297 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: 'Roboto', Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+.button {
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+  font-weight: 500;
+
+
+  background-color: #fb565a;
+  border: none;
+  border-radius: 3px;
+}
+
+.button:hover,
+.button:focus {
+  background-color: #e74246;
+  outline: none;
+}
+
+.button:active {
+  color: #e37376;
+
+  background-color: #d7373b;
+  box-shadow: inset 0px 3px 0px 0px rgba(193, 49, 53);
+}
+
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/*   index   */
+
+/* header */
+
+.page__gray {
+  background-color: #eeeeee;
+}
+
+.wrap {
+  width: 1160px;
+
+  border-bottom: 2px solid #eeeeee;
+}
+
+.site-header {
+  background-color: #eeeeee;
+}
+
+.site-header__logo {
+  line-height: 0;
+}
+
+.site-header__nav a,
+.site-nav__cart {
+  color: #000000;
+  font-size: 16px;
+  line-height: 30px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.site-header__nav a:hover,
+.site-header__nav a:focus,
+.site-nav__cart:hover,
+.site-nav__cart:focus {
+  color: #fb565a;
+  outline: none;
+}
+
+
+.site-header__nav a:focus,
+.site-nav__cart:focus {
+  color: #fb565a;
+  outline: none;
+}
+
+.site-header__nav a:active,
+.site-nav__cart:active {
+  color: #a6a6a6;
+}
+
+
+/* main */
+
+/* advantages */
+
+.advantages__list {
+  list-style: none;
+}
+
+.advantages__item {
+  width: 300px;
+}
+
+.item-advantages__title {
+  color: #000000;
+  font-size: 24px;
+  line-height: 30px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.item-advantages__content {
+  color: rgb(40, 49, 54);
+}
+
+.item-advantages__link--green {
+  background-color: #00ca74;
+}
+
+.item-advantages__link--green:hover,
+.item-advantages__link--green:focus {
+  background-color: #00bc6c;
+}
+
+.item-advantages__link--green:active {
+  color: #4dc491;
+  background-color: #00aa62;
+  box-shadow: inset 0px 3px 0px 0px rgba(0, 153, 88)
+}
+
+.item-advantages__link--orange {
+  background-color: #efc84a;
+}
+
+.item-advantages__link--orange:hover,
+.item-advantages__link--orange:focus {
+  background-color: #e5a722;
+}
+
+.item-advantages__link--orange:active {
+  color: #edc265;
+  background-color: #e5a722;
+  box-shadow: inset 0px 3px 0px 0px rgba(206, 150, 31);
+}
+
+/* about */
+
+.about-iner:nth-of-type(1) {
+  width: 660px;
+}
+
+.about-iner:nth-of-type(2) {
+  width: 360px;
+}
+
+.about__subtitle {
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 500;
+}
+
+.about__text {
+  color: #283136;
+}
+
+.about__info {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.about__list {
+  list-style: none;
+}
+
+.list__item {
+  color: #283136;
+}
+
+.info-year {
+  text-align: center;
+}
+
+.statistics__number {
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 45px;
+}
+
+.statistics__number sup {
+  font-size: 26px;
+}
+
+.statistics__text {
+  line-height: 18px;
+  color: #283136;
+}
+
+/* portfolio */
+
+.portfolio__list {
+  list-style: none;
+}
+
+/* map */
+
+.map__img {
+  width: 100%;
+  min-width: 1160px;
+  height: 416px;
+}
+
+
+.contacts__name {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.contacts__text {
+  line-height: 18px;
+  color: #666666;
+}
+
+.contacts__tel {
+  line-height: 18px;
+  color: #666666;
+}
+
+/* footer */
+
+.wrap-footer {
+  border: none;
+}
+
+.socials-list {
+  list-style: none;
+}
+
+.site-footer__content p:first-child {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 700;
+}
+
+.site-footer__content p:last-child {
+  font-size: inherit;
+  line-height: 22px;
+  color: #444444;
+}
+
+/* modal */
+
+.modal {
+  width: 960px;
+  padding: 70px 100px;
+
+  background-color: #ffffff;
+  box-shadow: 0 0 20px rgba(0, 1, 1, 0.75);
+}
+
+.modal__subtitle {
+  font-size: 45px;
+  font-weight: 500;
+  line-height: 45px;
+}
+
+.label-form {
+  line-height: 18px;
+  font-weight: 700;
+}
+
