@@ -295,3 +295,156 @@ input[type="radio"].visually-hidden {
   font-weight: 700;
 }
 
+/*   catalog   */
+
+.site-main__title {
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: 500;
+  text-align: center;
+}
+
+/* filters */
+
+.field__subtitle {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/* range */
+
+.field__list {
+  list-style: none;
+}
+
+.field__item {
+  line-height: 22px;
+  text-transform: uppercase;
+  color: #283136;
+}
+
+.field__price {
+  background-color: #eeeeee;
+  border-radius: 3px;
+}
+
+/* radio */
+
+.field__label {
+  line-height: 20px;
+  color: #283136;
+}
+
+/* checkbox */
+
+.form-button {
+  color: #000000;
+
+  background-color: #eeeeee;
+}
+
+.form-button:hover,
+.form-button:focus {
+  background-color: #dfdfdf;
+}
+
+.form-button:active {
+  color: #959595;
+
+  background-color: #d5d5d5;
+  box-shadow: inset 0px 3px 0px 0px rgba(191, 191, 191);
+}
+
+/* catalog */
+
+.catalog-filter__text {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.catalog-filter__list {
+  list-style: none;
+}
+
+.catalog__link {
+  font-size: 14px;
+  line-height: 0px;
+  color: rgb(0, 0, 0, 0.3);
+  text-transform: uppercase;
+}
+
+.catalog__link:hover {
+  color: rgb(0, 0, 0, 0.6);
+}
+
+.catalog__link:active {
+  color: #000000;
+}
+
+.price-list {
+  list-style: none;
+}
+
+.catalog__info {
+  background-color: #eeeeee;
+}
+
+.info-catalog__subtitle {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.info-catalog__link-subtitle {
+  color: #000000;
+}
+
+.info-catalog__link-subtitle:hover,
+.info-catalog__link-subtitle:focus {
+  color: #fb565a;
+}
+
+.info-catalog__link-subtitle:active {
+  color: #b2b2b2;
+}
+
+.info-catalog__text {
+  line-height: 18px;
+  color: #666666;
+}
+
+.info-catalog__link:active {
+  color: #ffffff;
+}
+
+.pagination-catalog {
+  list-style: none;
+}
+
+.pagination-catalog__link {
+  color: #000000;
+  background-color: #eeeeee;
+}
+
+.pagination-catalog__link:hover,
+.pagination-catalog__link:focus {
+  color: #000000;
+  background-color: #dfdfdf;
+}
+
+.pagination-catalog__link:active {
+  color: #959595;
+  background-color: #d5d5d5;
+  box-shadow: inset 0px 3px 0px 0px rgba(191, 191, 191);
+}
+
+.pagination-catalog__link--active {
+  background-color: #ffffff;
+
+  box-shadow: inset 0px 0px 0px 3px #dbdbdb;
+}
