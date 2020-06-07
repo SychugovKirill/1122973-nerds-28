@@ -72,6 +72,7 @@ input[type="radio"].visually-hidden {
 
 .wrap {
   width: 1160px;
+  margin: 0 auto;
 
   border-bottom: 2px solid #eeeeee;
 }
@@ -80,8 +81,32 @@ input[type="radio"].visually-hidden {
   background-color: #eeeeee;
 }
 
+.wrap-header {
+	display: flex;
+	flex-wrap: wrap;
+	padding-top: 49px;
+	padding-bottom: 18px;
+	border: none;
+	align-items: center;
+}
+
 .site-header__logo {
   line-height: 0;
+}
+
+.site-nav {
+	margin-top: 20px;
+	margin-left: 202px;
+}
+
+.site-nav__list {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0;
+	margin: 0;
+	max-width: 650px;
+
+	list-style: none;
 }
 
 .site-header__nav a,
@@ -119,11 +144,17 @@ input[type="radio"].visually-hidden {
 /* advantages */
 
 .advantages__list {
-  list-style: none;
+	display: flex;
+	padding: 0;
+  margin: 0;
+
+	list-style: none;
 }
 
 .advantages__item {
-  width: 300px;
+	width: 300px;
+	margin-right: 100px;
+	margin-bottom: 80px;
 }
 
 .item-advantages__title {
@@ -170,6 +201,13 @@ input[type="radio"].visually-hidden {
 
 /* about */
 
+.about {
+	display: flex;
+	margin-top: 40px;
+	padding-bottom: 75px;
+	justify-content: space-between;
+}
+
 .about-iner:nth-of-type(1) {
   width: 660px;
 }
@@ -205,6 +243,14 @@ input[type="radio"].visually-hidden {
   text-align: center;
 }
 
+.statistics {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0;
+	margin: 0;
+	margin-top: 41px;
+}
+
 .statistics__number {
   font-size: 45px;
   font-weight: 700;
@@ -223,7 +269,17 @@ input[type="radio"].visually-hidden {
 /* portfolio */
 
 .portfolio__list {
-  list-style: none;
+	list-style: none;
+
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 45px;
+	padding-bottom: 43px;
+	padding-left: 30px;
+	padding-right: 42px;
+	margin: 0;
 }
 
 /* map */
@@ -255,11 +311,22 @@ input[type="radio"].visually-hidden {
 /* footer */
 
 .wrap-footer {
-  border: none;
+	border: none;
+	display: flex;
+	padding: 62px 0;
 }
 
 .socials-list {
-  list-style: none;
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	padding: 0;
+
+	margin: 0;
+	margin-right: 140px;
+	max-width: 265px;
+
+	list-style: none;
 }
 
 .site-footer__content p:first-child {
@@ -277,6 +344,8 @@ input[type="radio"].visually-hidden {
 /* modal */
 
 .modal {
+  display: none;
+
   width: 960px;
   padding: 70px 100px;
 
