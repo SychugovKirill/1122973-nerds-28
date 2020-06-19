@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 
 <head>
   <meta charset="UTF-8">
@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body class="page__body">
   <header class="site-header">
     <div class="wrap wrap-header">
       <a class="site-header__logo" href="#">
@@ -68,7 +68,7 @@
 
   <main>
     <h1 class="visually-hidden">Дизайн-студия "Нердс"</h1>
-    <div class="page page__gray">
+    <div class="page__gray">
       <input class="visually-hidden" type="radio" id="image-one" name="toggle" checked>
       <input class="visually-hidden" type="radio" id="image-two" name="toggle">
       <input class="visually-hidden" type="radio" id="image-three" name="toggle">
@@ -109,79 +109,74 @@
       </section>
     </div>
 
-    <div class="page">
-      <section class="advantages wrap">
-        <h2 class="visually-hidden">Наши услуги</h2>
-        <ul class="advantages__list">
-          <li class="advantages__item item-advantages item-websites">
-            <h3 class="item-advantages__title">Веб-сайты</h3>
-            <p class="item-advantages__content">Мир никогда не будет прежним после того как увидит ваш сайт!
-            </p>
-            <a class="item-advantages__link button" href="#">Заказать</a>
+    <section class="advantages wrap">
+      <h2 class="visually-hidden">Наши услуги</h2>
+      <ul class="advantages__list">
+        <li class="advantages__item item-advantages item-websites">
+          <h3 class="item-advantages__title">Веб-сайты</h3>
+          <p class="item-advantages__content">Мир никогда не будет прежним после того как увидит ваш сайт!
+          </p>
+          <a class="item-advantages__link button" href="#">Заказать</a>
+        </li>
+        <li class="advantages__item item-advantages item-applications">
+          <h3 class="item-advantages__title title-applications">Приложения</h3>
+          <p class="item-advantages__content">Покорите топ-10 приложений в AppStore и Google Play</p>
+          <a class="item-advantages__link button item-advantages__link--green" href="#">Заказать</a>
+        </li>
+        <li class="advantages__item item-advantages item-presentations">
+          <h3 class="item-advantages__title title-presentations">Презентации</h3>
+          <p class="item-advantages__content">Вы даже не подозреваете, насколько вы изумительны!</p>
+          <a class="item-advantages__link button item-advantages__link--orange" href="#">Заказать</a>
+        </li>
+      </ul>
+    </section>
+
+    <section class="about wrap">
+      <h2 class="visually-hidden">О нас</h2>
+      <div class="about-iner">
+        <h3 class="about__subtitle">Мы &mdash; маленькая, но гордая дизайн-студия из Краснодара.</h3>
+        <p class="about__text">Исповедуем принципы минимализма и чистоты. Ставим математический расчет
+          превыше креатива. Работаем не покладая рук, как роботы.</p>
+
+        <p class="about__info">Выполняем заказы на разработку:</p>
+        <ul class="about__list list">
+          <li class="list__item">Веб-сайтов любой сложности</li>
+          <li class="list__item">Мобильных приложений для iOS и Android</li>
+          <li class="list__item">Слайдшоу и видео для корпоративных презентаций</li>
+        </ul>
+      </div>
+
+      <div class="about-iner">
+        <div class="about__img"></div>
+        <p class="about__info info-year">с 2004 года любим точность во всем:</p>
+        <ul class="about__list statistics">
+          <li class="statistics__item">
+            <p class="statistics__number">146<sup>%</sup> </p>
+            <p class="statistics__text">Уровень <br> самоотдачи</p>
           </li>
-          <li class="advantages__item item-advantages item-applications">
-            <h3 class="item-advantages__title title-applications">Приложения</h3>
-            <p class="item-advantages__content">Покорите топ-10 приложений в AppStore и Google Play</p>
-            <a class="item-advantages__link button item-advantages__link--green" href="#">Заказать</a>
+          <li class="statistics__item">
+            <p class="statistics__number">100<sup>%</sup> </p>
+            <p class="statistics__text">Соблюдение <br> сроков</p>
           </li>
-          <li class="advantages__item item-advantages item-presentations">
-            <h3 class="item-advantages__title title-presentations">Презентации</h3>
-            <p class="item-advantages__content">Вы даже не подозреваете, насколько вы изумительны!</p>
-            <a class="item-advantages__link button item-advantages__link--orange" href="#">Заказать</a>
+          <li class="statistics__item">
+            <p class="statistics__number">50<sup>%</sup> </p>
+            <p class="statistics__text">Минимальная <br> предоплата</p>
           </li>
         </ul>
-      </section>
-    </div>
 
-    <div class="page">
-      <section class="about wrap">
-        <h2 class="visually-hidden">О нас</h2>
-        <div class="about-iner">
-          <h3 class="about__subtitle">Мы &mdash; маленькая, но гордая дизайн-студия из Краснодара.</h3>
-          <p class="about__text">Исповедуем принципы минимализма и чистоты. Ставим математический расчет
-            превыше креатива. Работаем не покладая рук, как роботы.</p>
+      </div>
+    </section>
 
-          <p class="about__info">Выполняем заказы на разработку:</p>
-          <ul class="about__list list">
-            <li class="list__item">Веб-сайтов любой сложности</li>
-            <li class="list__item">Мобильных приложений для iOS и Android</li>
-            <li class="list__item">Слайдшоу и видео для корпоративных презентаций</li>
-          </ul>
-        </div>
-
-        <div class="about-iner">
-          <div class="about__img"></div>
-          <p class="about__info info-year">с 2004 года любим точность во всем:</p>
-          <ul class="about__list statistics">
-            <li class="statistics__item">
-              <p class="statistics__number">146<sup>%</sup> </p>
-              <p class="statistics__text">Уровень <br> самоотдачи</p>
-            </li>
-            <li class="statistics__item">
-              <p class="statistics__number">100<sup>%</sup> </p>
-              <p class="statistics__text">Соблюдение <br> сроков</p>
-            </li>
-            <li class="statistics__item">
-              <p class="statistics__number">50<sup>%</sup> </p>
-              <p class="statistics__text">Минимальная <br> предоплата</p>
-            </li>
-          </ul>
-
-        </div>
-      </section>
-    </div>
-
-    <div class="page">
-      <section class="portfolio wrap">
-        <h2 class="visually-hidden">Наши сайты</h2>
-        <ul class="portfolio__list">
-          <li class="portfolio__item"><img src="img/logo-1-html-acad.png" width="199" height="68" alt="html academy"></li>
-          <li class="portfolio__item"><img src="img/logo-2-barber.png" width="209" height="90" alt="Барбершоп Бородинский"></li>
-          <li class="portfolio__item"><img src="img/logo-3-pink.png" width="185" height="52" alt="Пинк"></li>
-          <li class="portfolio__item"><img src="img/logo-4-mishka.png" width="173" height="84" alt="Мишка"></li>
-        </ul>
-      </section>
-    </div>
+    <section class="portfolio wrap">
+      <h2 class="visually-hidden">Наши сайты</h2>
+      <ul class="portfolio__list">
+        <li class="portfolio__item"><img src="img/logo-1-html-acad.png" width="199" height="68" alt="html academy"></li>
+        <li class="portfolio__item"><img src="img/logo-2-barber.png" width="209" height="90"
+            alt="Барбершоп Бородинский"></li>
+        <li class="portfolio__item"><img src="img/logo-3-pink.png" width="185" height="52" alt="Пинк"></li>
+        <li class="portfolio__item"><img src="img/logo-4-mishka.png" width="173" height="84" alt="Мишка"></li>
+      </ul>
+    </section>
 
     <section class="map">
       <h2 class="visually-hidden">Адрес и контакты студии</h2>
