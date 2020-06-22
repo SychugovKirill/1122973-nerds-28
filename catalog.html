@@ -42,8 +42,8 @@
           <li class="site-nav__item">
             <a class="site-nav__link" href="#">Клиенты</a>
           </li>
-          <li class="site-nav__item site-nav__item--active">
-            <a class="site-nav__link" href="catalog.html">Магазин</a>
+          <li class="site-nav__item">
+            <a class="site-nav__link site-nav__link--active" href="catalog.html">Магазин</a>
           </li>
           <li class="site-nav__item">
             <a class="site-nav__link" href="#">Контакты</a>
@@ -79,17 +79,17 @@
         <form class="form-filter" action="https://echo.htmlacademy.ru/" method="GET">
           <fieldset class="form-filter__field field">
             <legend class="field__subtitle">Стоимость:</legend>
-            <div class="inner-field__range">
-              <input class="field__range" type="range" step="1">
-              <span class="range__button"></span>
-              <span class="range__button"></span>
+            <div class="wrap-field__range">
+              <div class="field__range"></div>
+              <div class="toggle toggle-min"></div>
+              <div class="toggle toggle-max"></div>
             </div>
-            <ul class="field__list">
+            <div class="field__list list-control">
               <label class="field__item"> от <input type="number" name="field__price" value="0">
               </label>
               <label class="field__item"> до <input type="number" name="field__price" value="15000">
               </label>
-            </ul>
+            </div>
           </fieldset>
           <fieldset class="form-filter__field field field-radio">
             <legend class="field__subtitle subtitle-radio ">Сетка:</legend>
@@ -194,7 +194,7 @@
               <a href="#" class="info-catalog__link-subtitle">
                 <h3 class="info-catalog__subtitle">Barbershop</h3>
               </a>
-              <p class="info-catalog__text">Сайт салона красоты. Для мужчин, да.</p>
+              <p class="info-catalog__text">Сайт салона красоты Для мужчин, да.</p>
               <a class="info-catalog__link button" href="#">9 900 руб.</a>
             </div>
           </li>
@@ -254,10 +254,10 @@
     </div>
 
     <section class="map">
+      <h2 class="visually-hidden">Адрес и контакты студии</h2>
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6254883011295!2d30.319842696809438!3d59.93835641025281!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1589731787122!5m2!1sru!2sru"
-        width="100%" height="416px" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
-        tabindex="0"></iframe>
+        style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
       <img class="map__img" src="img/map.jpg" alt="Адрес студии Нердс">
       <div class="wrap">
         <div class="contacts">
@@ -268,17 +268,18 @@
         </div>
       </div>
     </section>
+  </main>
 
-    <footer class="site-footer">
-      <div class="wrap wrap-footer">
-        <ul class="site-footer__list socials-list">
-          <li class="socials-list__item">
-            <a class="socials-list__link button" href="#">
-              <span class="visually-hidden">В контакте</span>
-              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26px" height="15px"
-                viewBox="0 0 26 15" enable-background="new 0 0 26 15" xml:space="preserve">
-                <path fill="#FFFFFF" d="M16.138,11.51c0.956-0.309,2.18,2.04,3.483,2.939c0.978,0.681,1.727,0.534,1.727,0.534l3.473-0.05
+  <footer class="site-footer">
+    <div class="wrap wrap-footer">
+      <ul class="site-footer__list socials-list">
+        <li class="socials-list__item">
+          <a class="socials-list__link button" href="#">
+            <span class="visually-hidden">В контакте</span>
+            <svg version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26px" height="15px" viewBox="0 0 26 15"
+              enable-background="new 0 0 26 15" xml:space="preserve">
+              <path fill="#FFFFFF" d="M16.138,11.51c0.956-0.309,2.18,2.04,3.483,2.939c0.978,0.681,1.727,0.534,1.727,0.534l3.473-0.05
                                     c0,0,1.815-0.112,0.957-1.554c-0.071-0.12-0.503-1.069-2.585-3.022c-2.177-2.043-1.882-1.712,0.739-5.244
                                     c1.597-2.153,2.236-3.468,2.036-4.028c-0.192-0.539-1.365-0.399-1.365-0.399L20.69,0.713c-0.381,0.001-0.704,0.119-0.851,0.515
                                     c-0.003,0.004-0.621,1.666-1.445,3.079c-1.741,2.989-2.436,3.148-2.724,2.961c-0.661-0.433-0.494-1.737-0.494-2.664
@@ -288,59 +289,59 @@
                                     C4.912,0.719,4.562,0.66,4.562,0.66L0.848,0.684c0,0-0.558,0.016-0.763,0.262C-0.097,1.164,0.07,1.614,0.07,1.614
                                     s2.909,6.881,6.203,10.347c3.02,3.182,6.452,2.971,6.452,2.971h1.555c0,0,0.469-0.054,0.709-0.312
                                     c0.224-0.24,0.214-0.691,0.214-0.691S15.172,11.82,16.138,11.51z" />
-              </svg>
-            </a>
-          </li>
-          <li class="socials-list__item">
-            <a class="socials-list__link button" href="#">
-              <span class="visually-hidden">Фейсбук</span>
-              <svg version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12px" height="22px"
-                viewBox="0 0 12 22" enable-background="new 0 0 12 22" xml:space="preserve">
-                <path fill="#FFFFFF" d="M12,4V0H8C5.791,0,4,1.791,4,4v4H0v4h4v10h4V12h4V8H8V4H12z" />
-              </svg>
-            </a>
-          </li>
-          <li class="socials-list__item">
-            <a class="socials-list__link button" href="#">
-              <span class="visually-hidden">Инстаграм</span>
-              <svg enable-background="new 0 0 21 21" height="21" viewBox="0 0 21 21" width="21"
-                xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="m18 0h-15c-1.65 0-3 1.35-3 3v15c0 1.65 1.35 3 3 3h15c1.65 0 3-1.35 3-3v-15c0-1.65-1.35-3-3-3zm-7.5 7c1.93 0 3.5 1.57 3.5 3.5s-1.57 3.5-3.5 3.5-3.5-1.57-3.5-3.5 1.57-3.5 3.5-3.5zm7.5 11h-15v-9h1.181c-.114.482-.181.983-.181 1.5 0 3.59 2.91 6.5 6.5 6.5s6.5-2.91 6.5-6.5c0-.517-.066-1.018-.181-1.5h1.181zm0-11h-4v-4h4z"
-                  fill="#fff" />
-              </svg>
-            </a>
-          </li>
-        </ul>
-        <div class="site-footer__content content-footer">
-          <p class="content-footer__text">Давайте дружить, это выгодно!</p>
-          <p class="content-footer__text">Скидка 10% для друзей из социальных сетей.</p>
-        </div>
+            </svg>
+          </a>
+        </li>
+        <li class="socials-list__item">
+          <a class="socials-list__link button" href="#">
+            <span class="visually-hidden">Фейсбук</span>
+            <svg version="1.1" id="Layer_3" xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12px" height="22px" viewBox="0 0 12 22"
+              enable-background="new 0 0 12 22" xml:space="preserve">
+              <path fill="#FFFFFF" d="M12,4V0H8C5.791,0,4,1.791,4,4v4H0v4h4v10h4V12h4V8H8V4H12z" />
+            </svg>
+          </a>
+        </li>
+        <li class="socials-list__item">
+          <a class="socials-list__link button" href="#">
+            <span class="visually-hidden">Инстаграм</span>
+            <svg enable-background="new 0 0 21 21" height="21" viewBox="0 0 21 21" width="21"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="m18 0h-15c-1.65 0-3 1.35-3 3v15c0 1.65 1.35 3 3 3h15c1.65 0 3-1.35 3-3v-15c0-1.65-1.35-3-3-3zm-7.5 7c1.93 0 3.5 1.57 3.5 3.5s-1.57 3.5-3.5 3.5-3.5-1.57-3.5-3.5 1.57-3.5 3.5-3.5zm7.5 11h-15v-9h1.181c-.114.482-.181.983-.181 1.5 0 3.59 2.91 6.5 6.5 6.5s6.5-2.91 6.5-6.5c0-.517-.066-1.018-.181-1.5h1.181zm0-11h-4v-4h4z"
+                fill="#fff" />
+            </svg>
+          </a>
+        </li>
+      </ul>
+      <div class="site-footer__content content-footer">
+        <p class="content-footer__text">Давайте дружить, это выгодно!</p>
+        <p class="content-footer__text">Скидка 10% для друзей из социальных сетей.</p>
       </div>
-    </footer>
-    <section class="modal modal__letter">
-      <h2 class="modal__subtitle">Напишите нам</h2>
-      <form class="modal__form form" action="#" method="post">
-        <div class="form__inner name">
-          <label class="name__label label-form" for="name-user">Ваше имя:</label>
-          <input type="text" id="name-user" name="name" autofocus value="" placeholder="Имя Фамилия">
-        </div>
-        <div class="form__inner email">
-          <label class="email__label label-form" for="email-user">Ваш e-mail:</label>
-          <input type="email" id="email-user" name="email" value="" placeholder="email@example.com">
-        </div>
-        <div class="form__inner text">
-          <label class="text__label label-form" for="text-user">Текст письма:</label>
-          <textarea name="text" id="text-user" placeholder="В свободной форме"></textarea>
-        </div>
-        <button class="button" type="submit">Отправить</button>
-      </form>
-      <button class="modal__close" type="button">
-        <span class="visually-hidden">Закрыть</span>
-      </button>
-    </section>
-  </main>
+    </div>
+  </footer>
+
+  <section class="modal modal__letter">
+    <h2 class="modal__subtitle">Напишите нам</h2>
+    <form class="modal__form form" action="#" method="post">
+      <div class="form__inner name">
+        <label class="name__label label-form" for="name-user">Ваше имя:</label>
+        <input type="text" id="name-user" name="name" autofocus value="" placeholder="Имя Фамилия">
+      </div>
+      <div class="form__inner email">
+        <label class="email__label label-form" for="email-user">Ваш e-mail:</label>
+        <input type="email" id="email-user" name="email" value="" placeholder="email@example.com">
+      </div>
+      <div class="form__inner text">
+        <label class="text__label label-form" for="text-user">Текст письма:</label>
+        <textarea name="text" id="text-user" placeholder="В свободной форме"></textarea>
+      </div>
+      <button class="button" type="submit">Отправить</button>
+    </form>
+    <button class="modal__close" type="button">
+      <span class="visually-hidden">Закрыть</span>
+    </button>
+  </section>
   <script src="js/modal.js"></script>
 </body>
 
