@@ -892,6 +892,7 @@ input[type="radio"].visually-hidden {
 
 .socials-list__item {
   margin-right: 13px;
+  margin-bottom: 5px;
 }
 
 .socials-list__item:nth-child(3n) {
